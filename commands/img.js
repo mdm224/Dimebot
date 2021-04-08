@@ -1,6 +1,5 @@
 module.exports = {
     name: 'img',
-    description: 'this is a addquote command',
     execute(arg, message, google)
     {
         

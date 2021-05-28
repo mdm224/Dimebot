@@ -7,7 +7,10 @@ module.exports = {
         
         (async () => {
           
-          const browser = await puppeteer.launch();
+          const browser = const browser = await puppeteer.launch({
+                  headless: true,
+                  args: ['--no-sandbox','--disable-setuid-sandbox']
+                });
           const page = await browser.newPage();
           await page.goto('https://www.metal-archives.com/bands/'+bandName);
           const url = await page.url();

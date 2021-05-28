@@ -107,12 +107,31 @@ else if (command === 'quotelist')
 {
     client.commands.get('quotelist').execute(message);
 }
+
+    else if (command === "savefm")
+    {
+        var user = message.member.user.tag;
+        user = user.split('#')
+        var removeUserID = user.pop();
+        fs.appendFile('lastfmNames.txt', "\n" + user + ': https://www.last.fm/user/'+ arg2 + "\n", function (err) {
+            if (err) throw err;
+            message.channel.send('Saved!');
+          });
+    
+    }
+
+    else if (command === "fmnames")
+    {
+        fs.readFile('lastfmNames.txt', 'utf8', function(err, contents) {
+            message.channel.send(contents);
+        });
+    }
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     if (command === 'roots')
     {
         message.channel.send("BLOODY ROOTS!");
-        message.channel.send("https://thumbs.gfycat.com/FeistyBrilliantCattle-size_restricted.gif");
+        message.channel.send("https://tenor.com/view/roots-sepultura-metal-heavy-head-bang-gif-14038176");
     }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -138,6 +157,10 @@ if (command === "disturbed")
 
 }
 
+else if (command === 'slayer')
+{
+    message.channel.send("https://tenor.com/view/slayer-slayer-fan-slayer-ccream-slaytanic-slayeeeeeer-gif-12092692");
+}
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -161,7 +184,19 @@ if (command === "disturbed")
 
 
 
+else if (command === 'megas')
+    {
+        client.commands.get('megas').execute(message, arg);
+        
+    }
 
+    else if (command === 'addmegas')
+    {
+        client.commands.get('addmegas').execute(message, arg);
+        
+    }
+
+    
     else if (command == "stan")
     {
         message.channel.send("stan Unlucky Morpheus!");
@@ -169,7 +204,10 @@ if (command === "disturbed")
 
 
 
-
+    else if (command == "david")
+    {
+        message.channel.send("https://cdn.discordapp.com/attachments/714219258032422936/846809949941137478/image0.jpg");
+    }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -373,6 +411,17 @@ if (command === "disturbed")
         message.channel.send("https://food.fnr.sndimg.com/content/dam/images/food/fullset/2004/4/21/0/bw2b09_shrimp_cocktail.jpg.rend.hgtvcom.826.620.suffix/1557928675507.jpeg");
     }
 
+
+    else if( command === "limp")
+    {
+        message.channel.send("https://cdn.discordapp.com/attachments/800076217613156402/832063933342679090/cat.png");
+    }
+
+
+    else if (command === 'varged')
+    {
+        message.channel.send("https://cdn.discordapp.com/attachments/800076217613156402/832293731285205042/JRRqMI3h.png");
+    }
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 

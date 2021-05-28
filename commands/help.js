@@ -11,6 +11,8 @@ module.exports = {
         "metal - provides the Metal-Archives link of the provided band\n"+
         "img - provides a random image of the args provided\n"+
         "pick - picks a random number from 0 to the provided number\n"+
+        "savefm - saves the provided lastfm name to a doc\n"+
+        "fmnames - prints out the known lastfm names\n"+
         "\nMeme Commands:\n"+
         "mdm - returns 'weeb'\n"+
         "roots - returns the chorus of Roots by Sepultura and a gif of Max\n"+
@@ -29,6 +31,7 @@ module.exports = {
         "poser - returns some of the lyrics of Poser by Nanowar\n"+
         "walk - returns the lyrics of Walk\n"+
         "labrie - shrimp\n"+
-        "schaffer - 0-0-0\n```");
+        "schaffer - 0-0-0\n"+
+        "david - just playin the bass\n```"");
     }
 }

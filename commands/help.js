@@ -32,6 +32,6 @@ module.exports = {
         "walk - returns the lyrics of Walk\n"+
         "labrie - shrimp\n"+
         "schaffer - 0-0-0\n"+
-        "david - just playin the bass\n```"");
+        "david - just playin the bass\n```");
     }
 }

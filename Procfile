@@ -1,1 +1,1 @@
-Worker node jonbot.js
+Worker node Jonbot.js

@@ -16,12 +16,12 @@ module.exports = {
         const browser = await puppeteer.launch({headless: true});
         const page = await browser.newPage();
         await page.goto('https://docs.google.com/document/d/1C0ApFGHV6hToq-1OjTpbl-2KOCJ7Ao0pCex5wRZq1JQ/edit?usp=sharing');
-        await page.click('#gb > div > div.gb_Ue > a');
+        await page.click('#gb > div > div.gb_Te > a');
         await page.waitFor(2000);
-        await page.type('#identifierId', "email");
+        await page.type('#identifierId', "stormofthelightsbane132@gmail.com");
         page.keyboard.press('Enter');
         await page.waitFor(2000);
-        await page.type('#password > div.aCsJod.oJeWuf > div > div.Xb9hP > input', "password");
+        await page.type('#password > div.aCsJod.oJeWuf > div > div.Xb9hP > input', "primalfrost");
         page.keyboard.press('Enter');
     
         await page.waitFor(5000);
@@ -30,6 +30,7 @@ module.exports = {
         await browser.close();
         console.log("Done!");
         message.channel.send('Doc updated too.');
+        await browser.close();
     
   })();
     }

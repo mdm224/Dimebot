@@ -44,7 +44,7 @@ module.exports = {
                     {
                 
                       //  const results = await google.scrape(title + " metallum", 1);
-                        console.log('results', results);
+                        //console.log('results', results);
                         // await browser.close();
                         
                         message.channel.send({ embed: {
@@ -74,7 +74,7 @@ module.exports = {
                     {
                         
                     //    const results = await google.scrape(title + " metallum", 1);
-                        console.log('results', results);
+                        //console.log('results', results);
                      //   await browser.close();
                         
                         message.channel.send({ embed: {

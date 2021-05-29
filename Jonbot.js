@@ -52,6 +52,7 @@ for (const file of commandFiles)
 const google = new Scraper({
     puppeteer: {
       headless: true,
+      args: ['--no-sandbox','--disable-setuid-sandbox'],
     },
   });
 

@@ -43,15 +43,15 @@ module.exports = {
                 if (genre[0].includes(genre1) && genre[0].includes(genre2))
                     {
                 
-                        const results = await google.scrape(title + " metallum", 1);
+                      //  const results = await google.scrape(title + " metallum", 1);
                         console.log('results', results);
                         // await browser.close();
                         
                         message.channel.send({ embed: {
                             color: 3447003,
                             title: "Band name: "+ title+ "\nGenre: " + genre[0] + "\nLocation: " + location + "\nLyrical themes: "+ genre[1],
-                            image: {
-                                url: results[0].url},
+//                             image: {
+//                                 url: results[0].url},
                             url: url }});
                             message.channel.send("The search took "+ cont +" tries!");
                             cont = 50;
@@ -73,15 +73,15 @@ module.exports = {
                     if (genre[0].includes(searchGenre))
                     {
                         
-                        const results = await google.scrape(title + " metallum", 1);
+                    //    const results = await google.scrape(title + " metallum", 1);
                         console.log('results', results);
                      //   await browser.close();
                         
                         message.channel.send({ embed: {
                             color: 3447003,
                             title: "Band name: "+ title+ "\nGenre: " + genre[0] + "\nLocation: " + location + "\nLyrical themes: "+ genre[1],
-                            image: {
-                                url: results[0].url},
+//                             image: {
+//                                 url: results[0].url},
                             url: url }});
                         cont = cont + 1;
                         message.channel.send("The search took "+ cont +" tries!");

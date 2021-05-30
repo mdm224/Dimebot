@@ -84,10 +84,10 @@ if (!message.content.startsWith(prefix)  || message.author.bot) return; //if the
         client.commands.get('ping').execute(message, arg);
     }
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  
-else if (command === 'addquote')
-{
-    client.commands.get('addquote').execute(message, arg, puppeteer);
-}
+// else if (command === 'addquote')
+// {
+//     client.commands.get('addquote').execute(message, arg, puppeteer);
+// }
 
 else if (command === 'fuck')
 {
@@ -99,15 +99,15 @@ else if (command === 'hetfield')
     client.commands.get('hetfield').execute(message);
 }
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-else if (command === 'quote')
-{
-    client.commands.get('quote').execute(message, arg);
-}
+// else if (command === 'quote')
+// {
+//     client.commands.get('quote').execute(message, arg);
+// }
 
-else if (command === 'quotelist')
-{
-    client.commands.get('quotelist').execute(message);
-}
+// else if (command === 'quotelist')
+// {
+//     client.commands.get('quotelist').execute(message);
+// }
 
     else if (command === "savefm")
     {
@@ -121,12 +121,12 @@ else if (command === 'quotelist')
     
     }
 
-    else if (command === "fmnames")
-    {
-        fs.readFile('lastfmNames.txt', 'utf8', function(err, contents) {
-            message.channel.send(contents);
-        });
-    }
+//     else if (command === "fmnames")
+//     {
+//         fs.readFile('lastfmNames.txt', 'utf8', function(err, contents) {
+//             message.channel.send(contents);
+//         });
+//     }
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     if (command === 'roots')

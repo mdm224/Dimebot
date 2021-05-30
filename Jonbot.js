@@ -163,6 +163,12 @@ else if (command === 'slayer')
     message.channel.send("https://tenor.com/view/slayer-slayer-fan-slayer-ccream-slaytanic-slayeeeeeer-gif-12092692");
 }
 
+    
+    
+ else if (command === "AC/DC")
+ {
+     message.channel.send("https://cdn.discordapp.com/attachments/463595406153089045/848376191408537600/tenor_14.gif");
+ }
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 

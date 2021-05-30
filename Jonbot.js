@@ -165,7 +165,7 @@ else if (command === 'slayer')
 
     
     
- else if (command === "AC/DC")
+ else if (command === "acdc")
  {
      message.channel.send("https://cdn.discordapp.com/attachments/463595406153089045/848376191408537600/tenor_14.gif");
  }

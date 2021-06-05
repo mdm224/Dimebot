@@ -209,7 +209,10 @@ else if (command === 'megas')
         message.channel.send("stan Unlucky Morpheus!");
     }
 
-
+    else if (command === "god")
+    {
+        message.channel.send("https://cdn.discordapp.com/attachments/800076217613156402/850797376229736448/image0.jpg");
+    }
 
     else if (command == "david")
     {

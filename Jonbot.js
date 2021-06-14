@@ -265,8 +265,16 @@ else if (command === 'megas')
     }
 
 
+    else if (command === 'durst')
+    {
+         message.channel.send("https://cdn.discordapp.com/attachments/805541951638208528/854070616772313098/tenor_1.gif");
+    }
 
 
+    else if (command === 'texas')
+    {
+        message.channel.send("https://cdn.discordapp.com/attachments/805541951638208528/854070545254711366/tenor.gif");
+    }
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

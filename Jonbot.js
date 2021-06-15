@@ -10,7 +10,7 @@ var Scraper = require('images-scraper');
 const puppeteer = require('puppeteer-extra');
 const StealthPlugin = require('puppeteer-extra-plugin-stealth');
 puppeteer.use(StealthPlugin());
-
+var count = 0;
 
 //const JonBot = new Client();
 const prefix = '.';
@@ -63,8 +63,11 @@ const google = new Scraper({
   if(message.content.includes("Pantera") &&  message.author.id === "326894221481213952") 
   
   {
+      
     message.delete()
     message.channel.send("stfu jon");
+    count = count + 1;
+    message.channel.send(count);
   }
 
 

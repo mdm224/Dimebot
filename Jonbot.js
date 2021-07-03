@@ -217,10 +217,6 @@ else if (command === 'megas')
         message.channel.send("https://cdn.discordapp.com/attachments/800076217613156402/850797376229736448/image0.jpg");
     }
     
-    else if (command === 'randbandc')
-    {
-        client.commands.get('randBandC').execute(arg2, message, google, puppeteer);
-    }
     
     else if (command == "david")
     {
@@ -264,7 +260,10 @@ else if (command === 'megas')
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-
+    else if (command === 'randbandc')
+    {
+        client.commands.get('randBandC').execute(arg2, message, google, puppeteer);
+    }
 
     else if (command === 'room')
     {

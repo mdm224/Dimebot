@@ -49,7 +49,15 @@ module.exports = {
                                 url: results[0].url},
                             url: url }});
                         cont = cont + 1;
-                        message.channel.send("The search took "+ cont +" tries!");
+                         if (cont > 1)
+                        {
+                            message.channel.send("The search took "+ cont +" tries!");
+                        }
+                        
+                        else if (cont = 1)
+                        {
+                             message.channel.send("The search took "+ cont +" try!");
+                        }
                         cont = 50;
                     }
                     else if (cont <= 50)

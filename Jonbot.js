@@ -216,7 +216,12 @@ else if (command === 'megas')
     {
         message.channel.send("https://cdn.discordapp.com/attachments/800076217613156402/850797376229736448/image0.jpg");
     }
-
+    
+    else if (command === 'randbandc')
+    {
+        client.commands.get('randBandC').execute(arg2, message, google, puppeteer);
+    }
+    
     else if (command == "david")
     {
         message.channel.send("https://cdn.discordapp.com/attachments/714219258032422936/846809949941137478/image0.jpg");

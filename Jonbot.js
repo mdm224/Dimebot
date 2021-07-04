@@ -262,6 +262,10 @@ else if (command === 'megas')
 
     else if (command === 'randbandc')
     {
+        arg2 = arg2.charAt(0).toUpperCase() + arg2;
+        var letter = arg2.charAt(1);
+        arg2 = arg2.replace(letter, '');
+        console.log(arg2);
         client.commands.get('randBandC').execute(arg2, message, google, puppeteer);
     }
 

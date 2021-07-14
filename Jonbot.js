@@ -226,7 +226,10 @@ else if (command === 'megas')
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-
+else if (command === "epk")
+{
+ message.channel.send("my name is Geoff Tate, I'm a singer, songwriter, traveler. Oh yeah, I love my job. I'm one of the founding members of Queensrÿche. We've been a band for 30 years. We have 12 studio albums that have sold around 12 million copies. I feel incredibly fortunate that I've been able to travel, play my music for people in 46 different countries around the world. Music is my great passion, but I've been told that my passion for living boarders on extreme. I guess I'm an experienced junky. I crave adventure. In fact if there's any excuse for adventure, I'm there. I usually bring  a couple of motorcycles with me on tour. Ride between cities. I love wine, and I have my own brand. It's called insania! We do a red and a white, and just released our 4th vintage, 2010. Motorcycles, music, wine, these are some but not all of the passions in my life. I'm a family man and my wife and I have 4 beautiful daughters. And recently, we were blessed with our first grandchild. What a celebration. It has been quite an experience becoming a grandfather. I had no idea that it would effect me so profoundly. I've had a glimpse of my own mortality. So now I'm pumping up the volume. You know, they say life is for living, so pack in everything you can. And I've reached the stage where... wait watch this. Heh yeah, love that. Oh there's my beautiful wife, Susan. So I've reached the stage in life where I'm fascinated by what's next. They say if you want to move in a particular direction, lean that way. This is life. It's happening right now. And I say, bring it on.");   
+}
 
 
         else if (command === 'brady')

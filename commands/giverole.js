@@ -2,8 +2,6 @@ module.exports = {
     name: 'giverole',
     permissions: "ADMINISTRATOR",
     execute(message, args){
-        
-
 
             const targetUser = message.mentions.users.first()
             if (!targetUser)
@@ -27,10 +25,10 @@ module.exports = {
                 }
 
                 const member = guild.members.cache.get(targetUser.id);
-                if (member.hasPermission(['MANAGE_ROLES'])) {
+                if (message.member.hasPermission(['MANAGE_ROLES'])) {
                 member.roles.add(role);
 
-                message.channel.send("Done!");
+                message.channel.send("Done! User now has this role.");
     }
     else{
         message.channel.send("You can't remove roles.");

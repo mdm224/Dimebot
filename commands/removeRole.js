@@ -25,14 +25,14 @@ module.exports = {
             }
 
             const members = guild.members.cache.get(targetUser.id);
-            if (members.hasPermission(['MANAGE_ROLES'])) {
+            if (message.member.hasPermission(['MANAGE_ROLES'])) {
             if (members.roles.cache.get(role.id)){
             members.roles.remove(role);
             }
             else {
                 message.reply("They don't have this role.");
             }
-            message.channel.send("Done!");
+            message.channel.send("Done! User no longer has this role.");
         }
         else{
             message.channel.send("You can't remove roles.");

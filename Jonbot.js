@@ -176,14 +176,21 @@ else if (command === 'slayer')
 
 
 
+else if (command === 'addrole')
+{
+    client.commands.get('giverole').execute(message, arg, client);
+}
 
+else if (command === 'removerole')
+{
+    client.commands.get('removerole').execute(message, arg, client);
+}
 
-
-    else if (command === 'pick')
-    {
-        client.commands.get('pick').execute(message, arg);
-        
-    }
+else if (command === 'pick')
+ {
+     client.commands.get('pick').execute(message, arg);
+       
+  }
 
 
 

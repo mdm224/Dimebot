@@ -25,7 +25,7 @@ module.exports = {
 
     message.channel.send("Created role " + name + " with the color "+ color);
 }
-else{
+else {
     message.channel.send("You don't have the perms to create a new role.");
 }
 }}

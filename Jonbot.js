@@ -302,7 +302,16 @@ else if (command === "epk")
 
 
 
+    else if (command === 'createrole')
+    {
+        client.commands.get('createrole').execute(message, arg);
+    }
 
+
+    else if (command === 'deleterole')
+    {
+        client.commands.get('deleterole').execute(message, arg);
+    }
 
 
 

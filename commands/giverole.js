@@ -2,6 +2,7 @@ module.exports = {
     name: 'giverole',
     permissions: "ADMINISTRATOR",
     execute(message, args){
+        if (member.hasPermission(['MANAGE_ROLES'])) {
 
         const targetUser = message.mentions.users.first()
         if (!targetUser)
@@ -29,4 +30,8 @@ module.exports = {
 
             message.channel.send("Done!");
     }
+    else{
+        message.channel.send("You can't remove roles.");
+    }
+}
 }

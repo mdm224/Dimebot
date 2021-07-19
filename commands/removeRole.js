@@ -2,7 +2,7 @@ module.exports = {
     name: 'removerole',
     permissions: "ADMINISTRATOR",
     execute(message, args){
-        if (member.hasPermission(['MANAGE_ROLES'])) {
+        
         const targetUser = message.mentions.users.first()
         if (!targetUser)
         {
@@ -25,6 +25,7 @@ module.exports = {
             }
 
             const members = guild.members.cache.get(targetUser.id);
+            if (members.hasPermission(['MANAGE_ROLES'])) {
             if (members.roles.cache.get(role.id)){
             members.roles.remove(role);
             }

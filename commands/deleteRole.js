@@ -4,6 +4,9 @@ module.exports = {
     execute(message, args){
 
         let guild = message.guild;
+        args = args.toString();
+        args = args.replace(/,/g, " ")
+        console.log(args);
 
         if (message.member.hasPermission(['MANAGE_ROLES'])) {
         const role = guild.roles.cache.find(role => role.name === args);

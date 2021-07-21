@@ -6,7 +6,7 @@ module.exports = {
         let guild = message.guild;
 
         if (message.member.hasPermission(['MANAGE_ROLES'])) {
-        const role = guild.roles.cache.find(role => role.name === args[0]);
+        const role = guild.roles.cache.find(role => role.name === args);
         role.delete("testing")
   .then(deleted => console.log(`Deleted role ${deleted.name}`))
   .catch(console.error);

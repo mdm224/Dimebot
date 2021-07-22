@@ -74,6 +74,7 @@ const google = new Scraper({
 if (!message.content.startsWith(prefix)  || message.author.bot) return; //if the message contains the prefix, start
 //|| message.author.id === "326894221481213952"
 
+   var arg3 = message.content;
    var arg = message.content.slice(prefix.length).trim().split(' ');//starts splitting the text 
    var command = arg.shift().toLowerCase();//rmoves the command from the message
    var arg2 = arg.toString();//re-builds the string
@@ -304,7 +305,7 @@ else if (command === "epk")
 
     else if (command === 'createrole')
     {
-        client.commands.get('createrole').execute(message, arg);
+        client.commands.get('createrole').execute(message, arg3);
     }
 
 

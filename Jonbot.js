@@ -305,7 +305,7 @@ else if (command === "epk")
 
     else if (command === 'createrole')
     {
-        client.commands.get('createrole').execute(message, arg3);
+        client.commands.get('createrole').execute(message, arg3, prefix);
     }
 
 

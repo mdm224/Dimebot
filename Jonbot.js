@@ -60,7 +60,7 @@ const google = new Scraper({
   
 
 
-  if(message.content.includes("Pantera") &&  message.author.id === "326894221481213952") 
+  if(message.content.includes("Pantera") || message.content.includes("Pan") || message.content.includes("pantera") || message.content.includes("pan")&&  message.author.id === "326894221481213952") 
   
   {
       

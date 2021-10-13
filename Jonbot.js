@@ -60,7 +60,7 @@ const google = new Scraper({
   
 
 
-  if(message.content.includes("Pantera") || message.content.includes("Pan") || message.content.includes("pantera") || message.content.includes("pan")&&  message.author.id === "326894221481213952") 
+  if(message.content.includes("Pantera") &&  message.author.id === "326894221481213952") 
   
   {
       
@@ -69,7 +69,32 @@ const google = new Scraper({
     count = count + 1;
     message.channel.send(count);
   }
+    else if (message.content.includes("Pan") &&  message.author.id === "326894221481213952")
+   {
+      
+    message.delete()
+    message.channel.send("stfu jon");
+    count = count + 1;
+    message.channel.send(count);
+  }
+    
+      else if (message.content.includes("pantera") &&  message.author.id === "326894221481213952")
+   {
+      
+    message.delete()
+    message.channel.send("stfu jon");
+    count = count + 1;
+    message.channel.send(count);
+  }
 
+      else if (message.content.includes("pan") &&  message.author.id === "326894221481213952")
+   {
+      
+    message.delete()
+    message.channel.send("stfu jon");
+    count = count + 1;
+    message.channel.send(count);
+  }
 
 if (!message.content.startsWith(prefix)  || message.author.bot) return; //if the message contains the prefix, start
 //|| message.author.id === "326894221481213952"

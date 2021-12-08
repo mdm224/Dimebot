@@ -29,7 +29,7 @@ module.exports = {
                 member.roles.add(role);
 
                 message.channel.send("Done! User now has this role.");
-                var interval = setInterval(removeTempRole, 10, message, args);
+                var interval = setInterval(removeTempRole, 500, message, args);
     }
     else{
         message.channel.send("You can't remove roles.");

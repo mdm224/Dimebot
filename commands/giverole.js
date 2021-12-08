@@ -1,5 +1,5 @@
 module.exports = {
-    name: 'givetemprole',
+    name: 'giverole',
     permissions: "ADMINISTRATOR",
     execute(message, args){
 

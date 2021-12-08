@@ -16,17 +16,7 @@ var count = 0;
 const prefix = '.';
 
 
-const theRoom = [
-    "in a few minutes bitch",
-    "erybody betray me",
-    "am fed up with dis worl",
-    "oh hia doggy",
-    "Two’s great but three's a crowd",
-    "anyway how’s your sex life?",
-    "oh hey denny",
-    "oh hia lisa",
-    "you're tearing me apart Lisa!!!"
-]
+
 
 
 client.once('ready', () => {
@@ -55,46 +45,6 @@ const google = new Scraper({
                   args: ['--no-sandbox','--disable-setuid-sandbox']
                 },
   });
-
-
-  
-
-
-  if(message.content.includes("Pantera") &&  message.author.id === "326894221481213952") 
-  
-  {
-      
-    message.delete()
-    message.channel.send("stfu jon");
-    count = count + 1;
-    message.channel.send(count);
-  }
-    else if (message.content.includes("Pan") &&  message.author.id === "326894221481213952")
-   {
-      
-    message.delete()
-    message.channel.send("stfu jon");
-    count = count + 1;
-    message.channel.send(count);
-  }
-    
-      else if (message.content.includes("pantera") &&  message.author.id === "326894221481213952")
-   {
-      
-    message.delete()
-    message.channel.send("stfu jon");
-    count = count + 1;
-    message.channel.send(count);
-  }
-
-      else if (message.content.includes("pan") &&  message.author.id === "326894221481213952")
-   {
-      
-    message.delete()
-    message.channel.send("stfu jon");
-    count = count + 1;
-    message.channel.send(count);
-  }
 
 if (!message.content.startsWith(prefix)  || message.author.bot) return; //if the message contains the prefix, start
 //|| message.author.id === "326894221481213952"

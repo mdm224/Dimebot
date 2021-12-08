@@ -114,6 +114,11 @@ else if (command === 'pick')
         
     }
 
+else if (command === 'addtemprole')
+    {
+        client.commands.get('givetemprole').execute(message, arg, client);
+        
+    }
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

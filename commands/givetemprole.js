@@ -35,7 +35,7 @@ module.exports = {
                 message.channel.send("Done! User no longer has this role.");
                 clearInterval(interval);
                 }, 5000);
-               // var interval = setInterval(removeTempRole, 500, targetUser, role, guild, message, interval, member);
+          
                 
     }
     else{

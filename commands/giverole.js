@@ -42,9 +42,15 @@ module.exports = {
 
 function removeTempRole (targetUser, role, guild, message, interval, member) {
         member.roles.remove(role);
-        clearInterval(interval);
+        
         message.channel.send("Done! User no longer has this role.");
+        endInterval(interval);
         
         
-        
+}
+
+
+function endInterval(interval)
+{
+    return clearInterval(interval);
 }

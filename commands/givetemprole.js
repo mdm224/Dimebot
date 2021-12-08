@@ -39,7 +39,7 @@ module.exports = {
                 
     }
     else{
-        message.channel.send("You can't remove roles.");
+        message.channel.send("You can't add roles.");
     }
 }
 }

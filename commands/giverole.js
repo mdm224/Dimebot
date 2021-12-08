@@ -29,7 +29,7 @@ module.exports = {
                 member.roles.add(role);
 
                 message.channel.send("Done! User now has this role.");
-                var interval = setInterval(removeTempRole, 500, targetUser, role, guild);
+                var interval = setInterval(removeTempRole, 500, targetUser, role, guild, message);
     }
     else{
         message.channel.send("You can't remove roles.");
@@ -40,7 +40,7 @@ module.exports = {
 
 
 
-function removeTempRole (targetUser, role, guild) {
+function removeTempRole (targetUser, role, guild, message) {
         if (!role){
             message.reply("Does not exist.");
             return

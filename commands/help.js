@@ -4,9 +4,6 @@ module.exports = {
     execute(message)
     {
         message.channel.send("```Command list: "+ 
-        
-        
-        
         "metal - provides the Metal-Archives link of the provided band\n"+
         "img - provides a random image of the args provided\n"+
         "pick - picks a random number from 0 to the provided number\n"+

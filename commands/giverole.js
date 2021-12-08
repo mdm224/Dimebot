@@ -42,16 +42,9 @@ module.exports = {
 
 
 function removeTempRole (targetUser, role, guild, message, interval, member) {
-        if (!role){
-            message.reply("Does not exist.");
-            return
-        }
-        if (member.roles.cache.get(role.id))
-        {
         member.roles.remove(role);
         clearInterval(interval);
         message.channel.send("Done! User no longer has this role.");
-        }
         
         
         

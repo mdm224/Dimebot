@@ -29,7 +29,8 @@ module.exports = {
                 member.roles.add(role);
 
                 message.channel.send("Done! User now has this role.");
-                var interval = setInterval(removeTempRole, 500, targetUser, role, guild, message, interval);
+                var interval = setInterval(removeTempRole, 500, targetUser, role, guild, message, interval, member);
+                clearInterval(interval);
     }
     else{
         message.channel.send("You can't remove roles.");
@@ -40,22 +41,18 @@ module.exports = {
 
 
 
-function removeTempRole (targetUser, role, guild, message, interval) {
+function removeTempRole (targetUser, role, guild, message, interval, member) {
         if (!role){
             message.reply("Does not exist.");
             return
         }
-
-        const members = guild.members.cache.get(targetUser.id);
-        if (message.member.hasPermission(['MANAGE_ROLES'])) {
-        if (members.roles.cache.get(role.id)){
-        members.roles.remove(role);
+        if (member.roles.cache.get(role.id))
+        {
+        member.roles.remove(role);
+        clearInterval(interval);
+        message.channel.send("Done! User no longer has this role.");
         }
         
-        message.channel.send("Done! User no longer has this role.");
-        clearInterval(interval);
-    
-    
-
-}
+        
+        
 }

@@ -1,5 +1,5 @@
 module.exports = {
-    name: 'giverole',
+    name: 'givetemprole',
     permissions: "ADMINISTRATOR",
     execute(message, args){
 
@@ -29,29 +29,10 @@ module.exports = {
                 member.roles.add(role);
 
                 message.channel.send("Done! User now has this role.");
-                var interval = setInterval(function() {
-                member.roles.remove(role);
-        
-                message.channel.send("Done! User no longer has this role.");
-                clearInterval(interval);
-                }, 5000);
-               // var interval = setInterval(removeTempRole, 500, targetUser, role, guild, message, interval, member);
-                
+               
     }
     else{
         message.channel.send("You can't remove roles.");
     }
 }
 }
-
-
-
-
-// function removeTempRole (targetUser, role, guild, message, interval, member) {
-//         member.roles.remove(role);
-        
-//         message.channel.send("Done! User no longer has this role.");
-//         endInterval(interval);
-        
-        
-// }

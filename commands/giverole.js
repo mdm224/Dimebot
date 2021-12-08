@@ -40,24 +40,7 @@ module.exports = {
 
 
 
-function removeTempRole (message, args) {
-
-    const targetUser = message.mentions.users.first()
-    if (!targetUser)
-    {
-        message.reply("Please specify.")
-        return
-    }
-
-    args.shift();
-
-    const roleName = args.join(' ');
-
-    const { guild } = message;
-
-    const role = guild.roles.cache.find((role)=>{
-        return role.name === roleName;
-    })
+function removeTempRole (targetUser, role, guild) {
         if (!role){
             message.reply("Does not exist.");
             return
@@ -70,6 +53,7 @@ function removeTempRole (message, args) {
         }
         
         message.channel.send("Done! User no longer has this role.");
+        clearInterval(interval);
     
     
 

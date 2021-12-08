@@ -39,7 +39,7 @@ module.exports = {
 
 
 
-}
+
 function removeTempRole (message, args) {
 
     const targetUser = message.mentions.users.first()

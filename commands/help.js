@@ -9,7 +9,7 @@ module.exports = {
         "createRole - creates a new role with the name provided"+
         "addrole - adds the selected role to the provided user"+
         "deleterole - deletes the provided role"+
-        "removerole - removes the selected role from the provided user```";
+        "removerole - removes the selected role from the provided user```");
        
     }
 }

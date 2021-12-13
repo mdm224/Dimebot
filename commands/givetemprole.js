@@ -12,8 +12,20 @@ module.exports = {
 
             args.shift();
 
-            const roleName = args.join(' ');
-
+            const roleName = args[2];
+            const time = args[3];
+        
+            if (args[4] === "minutes")
+                {
+            time = time * 60000;
+                }
+            
+            else if (args[4] === "hours")
+            {
+                time = time * 60000;
+                time = time * 60;
+            }
+        
             const { guild } = message;
 
             const role = guild.roles.cache.find((role)=>{
@@ -34,7 +46,7 @@ module.exports = {
         
                 message.channel.send("Done! User no longer has this role.");
                 clearInterval(interval);
-                }, 5000);
+                }, time);
           
                 
     }

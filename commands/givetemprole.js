@@ -10,8 +10,6 @@ module.exports = {
                 return
             }
 
-            args.shift();
-
             const roleName = args[2];
             console.log(roleName);
             const time = args[3];

@@ -10,16 +10,16 @@ module.exports = {
                 return
             }
 
-            const roleName = args[2];
+            const roleName = args[1];
             console.log(roleName);
-            const time = args[3];
+            const time = args[2];
         
-            if (args[4] === "minutes")
+            if (args[3] === "minutes")
                 {
             time = time * 60000;
                 }
             
-            else if (args[4] === "hours")
+            else if (args[3] === "hours")
             {
                 time = time * 60000;
                 time = time * 60;

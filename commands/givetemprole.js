@@ -12,7 +12,7 @@ module.exports = {
 
             const roleName = args[1];
             console.log(roleName);
-            const time = args[2];
+            var time = args[2];
         
             if (args[3] === "minutes")
                 {

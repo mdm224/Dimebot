@@ -45,7 +45,15 @@ const google = new Scraper({
                   args: ['--no-sandbox','--disable-setuid-sandbox']
                 },
   });
-
+if(message.content.includes("weeb") &&  message.author.id === "326894221481213952") 
+  
+  {
+    message.delete()
+    message.channel.send("stfu jon");
+    count = count + 1;
+    message.channel.send(count);
+  }
+    
 if (!message.content.startsWith(prefix)  || message.author.bot) return; //if the message contains the prefix, start
 //|| message.author.id === "326894221481213952"
 
